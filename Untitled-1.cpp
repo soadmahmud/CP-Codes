@@ -1,29 +1,40 @@
-#include <iostream>
-using namespacre std;
+#include<iostream>
+using namespace std;
 
-class base
+class r
 {
     public:
 
-    base()
+    string name;
+
+    int id;
+
+    void set()
     {
-        cout << "Base Default\n";
+        cin >> name >> id;
     }
-};
 
-class child : public base
-{
-    public:
-
-    child()
+    void show()
     {
-        cout << "Chold class base\n";
+        cout << "Name: " << name << endl << "ID: " << id << endl;
     }
 };
 
 int main()
 {
-    child c;
+    r a, b, c;
+
+    a.set();
+
+    b.set();
+
+    c.set();
+
+    a.show();
+
+    b.show();
+
+    c.show();
 
     return 0;
 }

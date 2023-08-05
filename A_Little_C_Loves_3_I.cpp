@@ -19,19 +19,19 @@ int main()
 
         cin >> n;
 
-        int max = 0;
+        ll mx = 0;
 
         while(n--)
         {
-            int a;
+            ll a;
 
             cin >> a;
 
-            max = max(a, max);
+            mx = max(a, mx);
         }
+        
 
-
-        cout << max << "\n";
+        cout << mx << "\n";
     }
 
     return 0;
